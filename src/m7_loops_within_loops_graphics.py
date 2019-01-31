@@ -102,6 +102,17 @@ def hourglass(window, n, point, radius, color):
     #    DIFFICULTY:      8
     #    TIME ESTIMATE:  25 minutes (warning: this problem is challenging)
     # -------------------------------------------------------------------------
+    point = rg.Point(x, y)
+    a = point.x
+    b = point.y
+    circle = rg.Circle(point, radius, color)
+    window1 = rg.RoseWindow(window)
+    for i in range(n-1):
+        for k in range(i):
+            window1.attach(circle)
+            a = a + k
+            b = b + k
+
 
 
 def run_test_many_hourglasses():
