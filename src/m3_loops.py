@@ -6,8 +6,8 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Dave Seelye.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -107,6 +107,12 @@ def run_test_practice_problem3():
              st.SimpleTestCase(practice_problem3,
                                [100, 5, 1.414],
                                [139, 183, 516, 560, 849]),
+             st.SimpleTestCase(practice_problem3,
+                               [0, 1, 1.414213562373],
+                               [286602]),
+             st.SimpleTestCase(practice_problem3,
+                               [0, 1, 1.414213562373],
+                               [286602]),
              st.SimpleTestCase(practice_problem3,
                                [0, 1, 1.414213562373],
                                [286602]),
@@ -217,7 +223,9 @@ def practice_problem3(start, n, threshold):
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   < 15 minutes.
     ###########################################################################
-
+    []
+    for k in range(n):
+        k
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

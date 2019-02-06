@@ -31,6 +31,24 @@ def run_test_zero_changer():
     print('  Expected:', expected1)
     print('  Actual:  ', test1)
 
+    # Test 2:
+    test1 = ([8, 4, 0, 9], [77, 0, 0, 1, 5, 0], [4, 4, 4], [4, 0, 4])
+    expected1 = ([8, 4, 1, 9], [77, 2, 3, 1, 5, 4], [4, 4, 4], [4, 5, 4])
+    zero_changer(test1)
+    print()
+    print('Test 1:')
+    print('  Expected:', expected1)
+    print('  Actual:  ', test1)
+
+    # Test 3:
+    test1 = ([8, 4, 0, 9], [77, 0, 0, 1, 5, 0], [4, 4, 4], [4, 0, 4])
+    expected1 = ([8, 4, 1, 9], [77, 2, 3, 1, 5, 4], [4, 4, 4], [4, 5, 4])
+    zero_changer(test1)
+    print()
+    print('Test 1:')
+    print('  Expected:', expected1)
+    print('  Actual:  ', test1)
+
     # -------------------------------------------------------------------------
     # TODO: 2. Write at least 2 additional tests for the
     #    zero_changer
@@ -72,6 +90,20 @@ def zero_changer(tuple_of_lists):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:  10 minutes.
     # -------------------------------------------------------------------------
+
+    for k in range(len(tuple_of_lists)):
+        if tuple_of_lists[k] == 0:
+            tuple_of_lists[k] = 1
+            return tuple_of_lists
+        if tuple_of_lists[k] == 0:
+            tuple_of_lists[k] = 2
+            return tuple_of_lists
+        if tuple_of_lists[k] == 0:
+            tuple_of_lists[k] = 3
+            return tuple_of_lists
+        if tuple_of_lists[k] == 0:
+            tuple_of_lists[k] = 5
+            return tuple_of_lists
 
 
 # -----------------------------------------------------------------------------
